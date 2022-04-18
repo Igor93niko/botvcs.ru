@@ -1,0 +1,36 @@
+{
+  "name": "vcsbot.ru",
+  "version": "1.0.0",
+  "description": "vcs room date password",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "client:install": "npm install -prefix client",
+    "client:build": "npm run build prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "author": "Gari93 <gari1993niko@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "http-proxy-middleware": "^2.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.14"
+  }
+}
